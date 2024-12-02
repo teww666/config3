@@ -78,4 +78,4 @@ Running Tests...
 [PASS] Absolute Value Expression
 [PASS] Invalid Expression
 ```
-![Скриншот результата](photo/Снимок%20экрана%202024-12-02%20224842.png)# config3
+![Скриншот результата](photo/photo1.png)
