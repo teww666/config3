@@ -1,0 +1,14 @@
+{
+        param1 : 100;
+        param2 : 15;
+    }
+{
+        nested : {
+            key1 : "value1";
+            key2 : 50;
+            inner : {
+                subkey1 : "subvalue1";
+                subkey2 : 50;
+            }
+        }
+    }

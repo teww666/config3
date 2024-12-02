@@ -1,0 +1,12 @@
+global x: 10
+global y: 5
+config:
+  param1: 100
+  param2: "@[+ x y]"
+data:
+  nested:
+    key1: value1
+    key2: "@[+ 20 30]"
+    inner:
+      subkey1: subvalue1
+      subkey2: "@[abs -50]"

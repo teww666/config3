@@ -1,0 +1,30 @@
+# Пример 1: Конфигурация веб-сервера
+global max_connections: 100
+global timeout: 30
+server:
+  name: "ExampleServer"
+  settings:
+    connections: "@[+ max_connections 50]"
+    timeout: "@[abs -timeout]"
+    nested_config:
+      cache_size: 256
+      log_level: "INFO"
+
+# Пример 2: Конфигурация системы умного дома
+global temp_threshold: 22
+global humidity_threshold: 60
+smart_home:
+  sensors:
+    temperature:
+      threshold: "@[+ temp_threshold 5]"
+    humidity:
+      threshold: "@[abs humidity_threshold]"
+    motion:
+      enabled: true
+  actuators:
+    heater:
+      state: "ON"
+      power_level: 80
+    lights:
+      state: "OFF"
+      brightness: 0
